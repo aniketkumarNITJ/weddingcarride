@@ -1,0 +1,125 @@
+{% extends 'cars/base.html' %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block css %}
+{%endblock%}
+
+{%block header%}
+<!-- Content -->
+<div class="page-content bg-white">
+    <!-- inner page banner -->
+    <div class="dlab-bnr-inr overlay-black-middle bg-pt" style="background-image:url(/static/images/galleryLogo.jpg);">
+        <div class="container">
+            <div class="dlab-bnr-inr-entry">
+                <h1 class="text-white">{{car}}</h1>
+                <!-- Breadcrumb row -->
+                <div class="breadcrumb-row">
+                    <ul class="list-inline">
+                        <li><a href="{%url 'home'%}">Home</a></li>
+                        <li>{{car}}</li>
+                    </ul>
+                </div>
+                <!-- Breadcrumb row END -->
+            </div>
+        </div>
+    </div>
+    <!-- inner page banner END -->
+    <div class="bg-white lightgallery" id="lightgallery">
+        <!-- Left & right section start -->
+        <div class="section-full bg-white content-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="section-content box-sort-in button-example">
+                            <div class="row">
+                                
+                                {%for img in imgs%}
+                                <div class="col-lg-3 col-md-6 col-sm-12 m-b15">
+                                    <div class="dlab-box">
+                                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom"> <img src="/static/images/cars/{{name}}/{{img}}" alt="">
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon"> 
+                                                    <span data-exthumbimage="/static/images/cars/{{name}}/{{img}}" data-src="/static/images/cars/{{name}}/{{img}}" class="check-km" title="{{car}}">		
+                                                        <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {%endfor%}
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- content on hover END -->
+        </div>
+    </div>
+</div>
+
+{%endblock%}
+
+{% block body%}
+
+{%endblock%}
+
+{% block script %}
+<script>
+    var tpj = jQuery;
+    var revapi152;
+    tpj(document).ready(function () {
+        if (tpj("#rev_slider_152_1").revolution == undefined) {
+            revslider_showDoubleJqueryError("#rev_slider_152_1");
+        } else {
+            revapi152 = tpj("#rev_slider_152_1").show().revolution({
+                sliderType: "standard",
+                jsFileLocation: "//server.local/revslider/wp-content/plugins/revslider/public/assets/js/",
+                sliderLayout: "fullscreen",
+                dottedOverlay: "none",
+                delay: 9000,
+                navigation: {
+                },
+                responsiveLevels: [1240, 1024, 778, 480],
+                visibilityLevels: [1240, 1024, 778, 480],
+                gridwidth: [1240, 1024, 778, 480],
+                gridheight: [868, 768, 960, 720],
+                lazyType: "none",
+                shadow: 0,
+                spinner: "off",
+                autoHeight: "off",
+                fullScreenAutoWidth: "off",
+                fullScreenAlignForce: "off",
+                fullScreenOffsetContainer: "",
+                fullScreenOffset: "",
+                disableProgressBar: "on",
+                hideThumbsOnMobile: "off",
+                hideSliderAtLimit: 0,
+                hideCaptionAtLimit: 0,
+                hideAllCaptionAtLilmit: 0,
+                debugMode: false,
+                fallbacks: {
+                    simplifyAll: "off",
+                    disableFocusListener: false,
+                }
+            });
+        }
+
+        var targetdate = new Date().getTime() + 864000000 // i.e. '2015/12/31 24:00',
+        slidechanges = [
+            { days: 0, hours: 0, minutes: 0, seconds: 12, slide: 2 },
+            { days: 0, hours: 0, minutes: 0, seconds: 0, slide: 3 }
+        ];
+
+        tp_countdown(revapi152, targetdate, slidechanges);
+
+        RsTypewriterAddOn(tpj, revapi152);
+    });
+</script>
+
+{% endblock %}

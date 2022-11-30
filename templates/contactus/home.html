@@ -1,0 +1,180 @@
+{% extends 'contactus/base.html' %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block css %}
+{%endblock%}
+
+{%block header%}
+{%endblock%}
+
+{% block body%}
+<div class="page-content bg-white">
+    <!-- inner page banner -->
+    <div class="dlab-bnr-inr overlay-black-middle bg-pt" style="background-image:url(/static/images/galleryLogo.jpg);">
+        <div class="container">
+            <div class="dlab-bnr-inr-entry">
+                <h1 class="text-white">Contact</h1>
+                <!-- Breadcrumb row -->
+                <div class="breadcrumb-row">
+                    <ul class="list-inline">
+                        <li><a href="{%url 'home'%}">Home</a></li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <!-- Breadcrumb row END -->
+            </div>
+        </div>
+    </div>
+    <!-- inner page banner END -->
+    <!-- Contact Form -->
+    <div class="section-full content-inner contact-page-9 overlay-black-dark" style="background-image: url(/static/images/contactus.jpg); background-position: 30% 100%">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 text-white">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 m-b30">
+                            <div class="icon-bx-wraper bx-style-1 p-a20 radius-sm">
+                                <div class="icon-content">
+                                    <h5 class="dlab-tilte">
+                                        <span class="icon-sm text-primary"><i class="ti-location-pin"></i></span> 
+                                        Company Address
+                                    </h5>
+                                    <p>AYALI CHOWK, FEROZPUR ROAD, LUDHIANA, PUNJAB/ INDIA </p>
+                                    <h6 class="m-b15 text-black font-weight-400"><i class="ti-alarm-clock"></i> Office Hours</h6>
+                                    <p class="m-b0">Whole Week - 24x7</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-6 m-b30">
+                            <div class="icon-bx-wraper bx-style-1 p-a20 radius-sm">
+                                <div class="icon-content">
+                                    <h5 class="dlab-tilte">
+                                        <span class="icon-sm text-primary"><i class="ti-email"></i></span> 
+                                        E-mail
+                                    </h5>
+                                    <p class="m-b0">a@weddingcarride.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-6 m-b30">
+                            <div class="icon-bx-wraper bx-style-1 p-a20 radius-sm">
+                                <div class="icon-content">
+                                    <h5 class="dlab-tilte">
+                                        <span class="icon-sm text-primary"><i class="ti-mobile"></i></span> 
+                                        Phone Numbers
+                                    </h5>
+                                    <p class="m-b0">+91-98556-00263</p>
+                                    <p class="m-b0">+91-99156-00031</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 m-b30">
+                    <form class="inquiry-form wow box-shadow bg-white fadeInUp" data-wow-delay="0.2s" method="POST" action="">
+                        {%csrf_token%}
+                        <h3 class="title-box font-weight-300 m-t0 m-b10">Book Us</h3>
+                        <p>Order will be responsed within 5 minutes</p>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="ti-user text-primary"></i></span>
+                                        <input name="name" type="text" required class="form-control" placeholder="First Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="ti-mobile text-primary"></i></span>
+                                        <input name="phone" type="text" required class="form-control" placeholder="Phone">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group">
+                                    <div class="input-group"> 
+                                        <span class="input-group-addon"><i class="ti-email text-primary"></i></span>
+                                        <input name="email" type="email" class="form-control" required  placeholder="Your Email Id" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="ti-agenda text-primary"></i></span>
+                                        <textarea name="msg" rows="4" class="form-control" required placeholder="Tell us about your need"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <button name="submit" type="submit" value="Submit" class="site-button button-md"> <span>Order!</span> </button>
+                            </div>
+                        </div>
+                    </form>	
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Form END -->
+</div>
+<!-- Content END-->
+{%endblock%}
+
+{% block script %}
+<script>
+    var tpj = jQuery;
+    var revapi152;
+    tpj(document).ready(function () {
+        if (tpj("#rev_slider_152_1").revolution == undefined) {
+            revslider_showDoubleJqueryError("#rev_slider_152_1");
+        } else {
+            revapi152 = tpj("#rev_slider_152_1").show().revolution({
+                sliderType: "standard",
+                jsFileLocation: "//server.local/revslider/wp-content/plugins/revslider/public/assets/js/",
+                sliderLayout: "fullscreen",
+                dottedOverlay: "none",
+                delay: 9000,
+                navigation: {
+                },
+                responsiveLevels: [1240, 1024, 778, 480],
+                visibilityLevels: [1240, 1024, 778, 480],
+                gridwidth: [1240, 1024, 778, 480],
+                gridheight: [868, 768, 960, 720],
+                lazyType: "none",
+                shadow: 0,
+                spinner: "off",
+                autoHeight: "off",
+                fullScreenAutoWidth: "off",
+                fullScreenAlignForce: "off",
+                fullScreenOffsetContainer: "",
+                fullScreenOffset: "",
+                disableProgressBar: "on",
+                hideThumbsOnMobile: "off",
+                hideSliderAtLimit: 0,
+                hideCaptionAtLimit: 0,
+                hideAllCaptionAtLilmit: 0,
+                debugMode: false,
+                fallbacks: {
+                    simplifyAll: "off",
+                    disableFocusListener: false,
+                }
+            });
+        }
+
+        var targetdate = new Date().getTime() + 864000000 // i.e. '2015/12/31 24:00',
+        slidechanges = [
+            { days: 0, hours: 0, minutes: 0, seconds: 12, slide: 2 },
+            { days: 0, hours: 0, minutes: 0, seconds: 0, slide: 3 }
+        ];
+
+        tp_countdown(revapi152, targetdate, slidechanges);
+
+        RsTypewriterAddOn(tpj, revapi152);
+    });
+</script>
+
+{% endblock %}

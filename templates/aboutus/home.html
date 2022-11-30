@@ -1,0 +1,124 @@
+{% extends 'aboutus/base.html' %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block css %}
+{%endblock%}
+
+{%block header%}
+<div class="page-content bg-white">
+    <!-- inner page banner -->
+    <div class="dlab-bnr-inr overlay-black-middle text-center bg-pt"
+        style="background-image:url(/static/images/galleryLogo.jpg);">
+        <div class="container">
+            <div class="dlab-bnr-inr-entry align-m text-center">
+                <h1 class="text-white">About Us</h1>
+                <!-- Breadcrumb row -->
+                <div class="breadcrumb-row">
+                    <ul class="list-inline">
+                        <li><a href="{%url 'home'%}">Home</a></li>
+                        <li>About Us</li>
+                    </ul>
+                </div>
+                <!-- Breadcrumb row END -->
+            </div>
+        </div>
+    </div>
+    <!-- inner page banner END -->
+    <!-- contact area -->
+    <div class="content-block">
+        <!-- About Services info -->
+        <div class="section-full content-inner bg-white video-section"
+            style="background-image:url('/static/images/background/bg-video.png');">
+            <div class="container">
+                <div class="section-content">
+                    <div class="row d-flex">
+                        <div class="col-lg-6 col-md-12 m-b30">
+                            <div class="video-bx">
+                                <img src="{%static 'images/background/youtube.JPG'%}" alt="Signature">
+                                <div class="video-play-icon">
+                                    <a href="https://www.youtube.com/watch?v=21j7LFQNJUQ"
+                                        class="popup-youtube video bg-primary"><i class="fa fa-play"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 m-b30 align-self-center video-infobx">
+                            <div class="content-bx1">
+                                <h2 class="m-b15 title">A company involved in<br><span class="text-primary"> service
+                                        </span></h2>
+                                <p class="m-b30">WeddingCarRide is India based travel agency that brings you best tour and travel services. We are offering you car hiring for wedding or shooting of Punjabi songs. Customer satisfaction is our solo motto. Whether you are travelling for business or need a car to enjoy, we provide you wide range of cars to make your ride perfect.</p>
+                                <p class="m-b30">We are the foremost choice of car rental service for wedding car in Punjab, Haryana and Himachal Pardesh. We also provide corporate car hire for wedding. Your safety is our responsibility that is why we provide you highly experienced and very responsible drivers.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Services info END -->
+    </div>
+</div>
+
+{%endblock%}
+
+{% block body%}
+
+{%endblock%}
+
+
+{% block script %}
+<script>
+    var tpj = jQuery;
+    var revapi152;
+    tpj(document).ready(function () {
+        if (tpj("#rev_slider_152_1").revolution == undefined) {
+            revslider_showDoubleJqueryError("#rev_slider_152_1");
+        } else {
+            revapi152 = tpj("#rev_slider_152_1").show().revolution({
+                sliderType: "standard",
+                jsFileLocation: "//server.local/revslider/wp-content/plugins/revslider/public/assets/js/",
+                sliderLayout: "fullscreen",
+                dottedOverlay: "none",
+                delay: 9000,
+                navigation: {
+                },
+                responsiveLevels: [1240, 1024, 778, 480],
+                visibilityLevels: [1240, 1024, 778, 480],
+                gridwidth: [1240, 1024, 778, 480],
+                gridheight: [868, 768, 960, 720],
+                lazyType: "none",
+                shadow: 0,
+                spinner: "off",
+                autoHeight: "off",
+                fullScreenAutoWidth: "off",
+                fullScreenAlignForce: "off",
+                fullScreenOffsetContainer: "",
+                fullScreenOffset: "",
+                disableProgressBar: "on",
+                hideThumbsOnMobile: "off",
+                hideSliderAtLimit: 0,
+                hideCaptionAtLimit: 0,
+                hideAllCaptionAtLilmit: 0,
+                debugMode: false,
+                fallbacks: {
+                    simplifyAll: "off",
+                    disableFocusListener: false,
+                }
+            });
+        }
+
+        var targetdate = new Date().getTime() + 864000000 // i.e. '2015/12/31 24:00',
+        slidechanges = [
+            { days: 0, hours: 0, minutes: 0, seconds: 12, slide: 2 },
+            { days: 0, hours: 0, minutes: 0, seconds: 0, slide: 3 }
+        ];
+
+        tp_countdown(revapi152, targetdate, slidechanges);
+
+        RsTypewriterAddOn(tpj, revapi152);
+    });
+</script>
+
+{% endblock %}

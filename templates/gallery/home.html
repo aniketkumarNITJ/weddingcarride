@@ -1,0 +1,399 @@
+{% extends 'gallery/base.html' %}
+{% load static %}
+
+{% block title %}{{title}}{% endblock %}
+
+{% block css %}
+{%endblock%}
+
+{%block header%}
+{%endblock%}
+
+{% block body%}
+<!-- Content -->
+<div class="page-content bg-white">
+    <!-- inner page banner -->
+    <div class="dlab-bnr-inr overlay-black-middle bg-pt" style="background-image:url(/static/images/galleryLogo.jpg);">
+        <div class="container">
+            <div class="dlab-bnr-inr-entry">
+                <h1 class="text-white">Gallery</h1>
+                <!-- Breadcrumb row -->
+                <div class="breadcrumb-row">
+                    <ul class="list-inline">
+                        <li><a href="{%url 'home'%}">Home</a></li>
+                        <li>Gallery</li>
+                    </ul>
+                </div>
+                <!-- Breadcrumb row END -->
+            </div>
+        </div>
+    </div>
+    <!-- inner page banner END -->
+    <div class="bg-white lightgallery" id="lightgallery">
+        
+        <!-- Left & right section start -->
+        <div class="section-full bg-white content-inner">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12">
+                        <div class="section-content box-sort-in button-example">
+                            <div class="section-head text-center">
+                                <h2 class="title"> Image Gallery </h2>
+                            </div>
+                            <div class="row">
+                                
+                                <div class="col-lg-3 col-md-6 col-sm-12 m-b15">
+                                    <div class="dlab-box">
+                                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom"> <img src="{%static 'images/gallery/pic1.jpeg'%}" alt="">
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon"> 
+                                                    <span data-exthumbimage="{%static 'images/gallery/pic1.jpeg'%}" data-src="{%static 'images/gallery/pic1.jpeg'%}" class="check-km" title="Image 1">		
+                                                        <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 m-b15">
+                                    <div class="dlab-box">
+                                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom"> <img src="{%static 'images/gallery/pic2.jpeg'%}" alt="">
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon"> 
+                                                    <span data-exthumbimage="{%static 'images/gallery/pic2.jpeg'%}" data-src="{%static 'images/gallery/pic2.jpeg'%}" class="check-km" title="Image 2">		
+                                                        <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 m-b15">
+                                    <div class="dlab-box">
+                                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom"> <img src="{%static 'images/gallery/pic3.jpeg'%}" alt="">
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon"> 
+                                                    <span data-exthumbimage="{%static 'images/gallery/pic3.jpeg'%}" data-src="{%static 'images/gallery/pic3.jpeg'%}" class="check-km" title="Image 3">		
+                                                        <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 m-b15">
+                                    <div class="dlab-box">
+                                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom"> <img src="{%static 'images/gallery/pic4.jpeg'%}" alt="">
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon"> 
+                                                    <span data-exthumbimage="{%static 'images/gallery/pic4.jpeg'%}" data-src="{%static 'images/gallery/pic4.jpeg'%}" class="check-km" title="Image 4">		
+                                                        <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 m-b15">
+                                    <div class="dlab-box">
+                                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom"> <img src="{%static 'images/gallery/pic5.jpeg'%}" alt="">
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon"> 
+                                                    <span data-exthumbimage="{%static 'images/gallery/pic5.jpeg'%}" data-src="{%static 'images/gallery/pic5.jpeg'%}" class="check-km" title="Image 5">		
+                                                        <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 m-b15">
+                                    <div class="dlab-box">
+                                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom"> <img src="{%static 'images/gallery/pic6.jpeg'%}" alt="">
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon"> 
+                                                    <span data-exthumbimage="{%static 'images/gallery/pic6.jpeg'%}" data-src="{%static 'images/gallery/pic6.jpeg'%}" class="check-km" title="Image 6">		
+                                                        <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 m-b15">
+                                    <div class="dlab-box">
+                                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom"> <img src="{%static 'images/gallery/pic7.jpeg'%}" alt="">
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon"> 
+                                                    <span data-exthumbimage="{%static 'images/gallery/pic7.jpeg'%}" data-src="{%static 'images/gallery/pic7.jpeg'%}" class="check-km" title="Image 7">		
+                                                        <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 m-b15">
+                                    <div class="dlab-box">
+                                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom"> <img src="{%static 'images/gallery/pic8.jpeg'%}" alt="">
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon"> 
+                                                    <span data-exthumbimage="{%static 'images/gallery/pic8.jpeg'%}" data-src="{%static 'images/gallery/pic8.jpeg'%}" class="check-km" title="Image 8">		
+                                                        <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 m-b15">
+                                    <div class="dlab-box">
+                                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom"> <img src="{%static 'images/gallery/pic9.jpeg'%}" alt="">
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon"> 
+                                                    <span data-exthumbimage="{%static 'images/gallery/pic9.jpeg'%}" data-src="{%static 'images/gallery/pic9.jpeg'%}" class="check-km" title="Image 9">		
+                                                        <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 m-b15">
+                                    <div class="dlab-box">
+                                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom"> <img src="{%static 'images/gallery/pic10.jpeg'%}" alt="">
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon"> 
+                                                    <span data-exthumbimage="{%static 'images/gallery/pic10.jpeg'%}" data-src="{%static 'images/gallery/pic10.jpeg'%}" class="check-km" title="Image 10">		
+                                                        <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 m-b15">
+                                    <div class="dlab-box">
+                                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom"> <img src="{%static 'images/gallery/pic11.jpeg'%}" alt="">
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon"> 
+                                                    <span data-exthumbimage="{%static 'images/gallery/pic11.jpeg'%}" data-src="{%static 'images/gallery/pic11.jpeg'%}" class="check-km" title="Image 11">		
+                                                        <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 m-b15">
+                                    <div class="dlab-box">
+                                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom"> <img src="{%static 'images/gallery/pic12.jpeg'%}" alt="">
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon"> 
+                                                    <span data-exthumbimage="{%static 'images/gallery/pic12.jpeg'%}" data-src="{%static 'images/gallery/pic12.jpeg'%}" class="check-km" title="Image 12">		
+                                                        <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 m-b15">
+                                    <div class="dlab-box">
+                                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom"> <img src="{%static 'images/gallery/pic13.jpeg'%}" alt="">
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon"> 
+                                                    <span data-exthumbimage="{%static 'images/gallery/pic13.jpeg'%}" data-src="{%static 'images/gallery/pic13.jpeg'%}" class="check-km" title="Image 13">		
+                                                        <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 m-b15">
+                                    <div class="dlab-box">
+                                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom"> <img src="{%static 'images/gallery/pic14.jpeg'%}" alt="">
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon"> 
+                                                    <span data-exthumbimage="{%static 'images/gallery/pic14.jpeg'%}" data-src="{%static 'images/gallery/pic14.jpeg'%}" class="check-km" title="Image 14">		
+                                                        <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 m-b15">
+                                    <div class="dlab-box">
+                                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom"> <img src="{%static 'images/gallery/pic15.jpeg'%}" alt="">
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon"> 
+                                                    <span data-exthumbimage="{%static 'images/gallery/pic15.jpeg'%}" data-src="{%static 'images/gallery/pic15.jpeg'%}" class="check-km" title="Image 15">		
+                                                        <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 m-b15">
+                                    <div class="dlab-box">
+                                        <div class="dlab-media dlab-img-overlay1 dlab-img-effect zoom"> <img src="{%static 'images/gallery/pic16.jpeg'%}" alt="">
+                                            <div class="overlay-bx">
+                                                <div class="overlay-icon"> 
+                                                    <span data-exthumbimage="{%static 'images/gallery/pic16.jpeg'%}" data-src="{%static 'images/gallery/pic16.jpeg'%}" class="check-km" title="Image 16">		
+                                                        <i class="fa fa-picture-o icon-bx-xs"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>                        
+                    </div>
+                    
+                    <div class="col-lg-12 mt-5">
+                        <div class="section-content box-sort-in button-example">
+                            <div class="section-head text-center">
+                                <h2 class="title"> Video Gallery </h2>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-6 wow bounceInUp m-b15" data-wow-duration="2s" data-wow-delay="0.1s">
+									<div class="video-bx">
+                                        <img src="{%static 'images/cars/pic1.JPG'%}" alt="Signature">
+                                        <div class="video-play-icon">
+                                            <a href="https://www.youtube.com/watch?v=Xkd-0bsaQ0s"
+                                                class="popup-youtube video bg-primary"><i class="fa fa-play"></i></a>
+                                        </div>
+                                    </div>
+								</div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-6 wow bounceInUp m-b15" data-wow-duration="2s" data-wow-delay="0.1s">
+									<div class="video-bx">
+                                        <img src="{%static 'images/cars/pic2.JPG'%}" alt="Signature">
+                                        <div class="video-play-icon">
+                                            <a href="https://www.youtube.com/watch?v=shth1v2wbUk"
+                                                class="popup-youtube video bg-primary"><i class="fa fa-play"></i></a>
+                                        </div>
+                                    </div>
+								</div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-6 wow bounceInUp m-b15" data-wow-duration="2s" data-wow-delay="0.1s">
+									<div class="video-bx">
+                                        <img src="{%static 'images/cars/pic3.JPG'%}" alt="Signature">
+                                        <div class="video-play-icon">
+                                            <a href="https://www.youtube.com/watch?v=zlMnHResTds"
+                                                class="popup-youtube video bg-primary"><i class="fa fa-play"></i></a>
+                                        </div>
+                                    </div>
+								</div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-6 wow bounceInUp m-b15" data-wow-duration="2s" data-wow-delay="0.1s">
+									<div class="video-bx">
+                                        <img src="{%static 'images/cars/pic4.JPG'%}" alt="Signature">
+                                        <div class="video-play-icon">
+                                            <a href="https://www.youtube.com/watch?v=EyCLDsFCoxk"
+                                                class="popup-youtube video bg-primary"><i class="fa fa-play"></i></a>
+                                        </div>
+                                    </div>
+								</div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 col-6 wow bounceInUp m-b15" data-wow-duration="2s" data-wow-delay="0.1s">
+									<div class="video-bx">
+                                        <img src="{%static 'images/cars/pic5.JPG'%}" alt="Signature">
+                                        <div class="video-play-icon">
+                                            <a href="https://www.youtube.com/watch?v=uycW2DBh7Bk"
+                                                class="popup-youtube video bg-primary"><i class="fa fa-play"></i></a>
+                                        </div>
+                                    </div>
+								</div>
+                                
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            <!-- content on hover END -->
+        </div>
+    </div>
+</div>
+<!-- Left & right section END -->
+<!-- Content END-->
+
+{%endblock%}
+
+
+{% block script %}
+<script>
+    var tpj = jQuery;
+    var revapi152;
+    tpj(document).ready(function () {
+        if (tpj("#rev_slider_152_1").revolution == undefined) {
+            revslider_showDoubleJqueryError("#rev_slider_152_1");
+        } else {
+            revapi152 = tpj("#rev_slider_152_1").show().revolution({
+                sliderType: "standard",
+                jsFileLocation: "//server.local/revslider/wp-content/plugins/revslider/public/assets/js/",
+                sliderLayout: "fullscreen",
+                dottedOverlay: "none",
+                delay: 9000,
+                navigation: {
+                },
+                responsiveLevels: [1240, 1024, 778, 480],
+                visibilityLevels: [1240, 1024, 778, 480],
+                gridwidth: [1240, 1024, 778, 480],
+                gridheight: [868, 768, 960, 720],
+                lazyType: "none",
+                shadow: 0,
+                spinner: "off",
+                autoHeight: "off",
+                fullScreenAutoWidth: "off",
+                fullScreenAlignForce: "off",
+                fullScreenOffsetContainer: "",
+                fullScreenOffset: "",
+                disableProgressBar: "on",
+                hideThumbsOnMobile: "off",
+                hideSliderAtLimit: 0,
+                hideCaptionAtLimit: 0,
+                hideAllCaptionAtLilmit: 0,
+                debugMode: false,
+                fallbacks: {
+                    simplifyAll: "off",
+                    disableFocusListener: false,
+                }
+            });
+        }
+
+        var targetdate = new Date().getTime() + 864000000 // i.e. '2015/12/31 24:00',
+        slidechanges = [
+            { days: 0, hours: 0, minutes: 0, seconds: 12, slide: 2 },
+            { days: 0, hours: 0, minutes: 0, seconds: 0, slide: 3 }
+        ];
+
+        tp_countdown(revapi152, targetdate, slidechanges);
+
+        RsTypewriterAddOn(tpj, revapi152);
+    });
+</script>
+
+{% endblock %}
